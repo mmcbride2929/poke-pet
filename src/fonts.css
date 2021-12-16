@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-ExtraBoldOblique.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-ExtraBoldOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT Condensed';
+  src: url('../src/fonts/FuturaLT-Condensed.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-Condensed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-LightOblique.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-LightOblique.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-ExtraBold.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-Light.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans BoldExtraCondensed';
+  src: url('../src/fonts/GillSans-BoldExtraCondensed.woff2') format('woff2'),
+    url('../src/fonts/GillSans-BoldExtraCondensed.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('../src/fonts/FuturaStd-BoldOblique.woff2') format('woff2'),
+    url('../src/fonts/FuturaStd-BoldOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('../src/fonts/FuturaStd-Heavy.woff2') format('woff2'),
+    url('../src/fonts/FuturaStd-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans Condensed';
+  src: url('../src/fonts/GillSans-CondensedBold.woff2') format('woff2'),
+    url('../src/fonts/GillSans-CondensedBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans ExtraBoldDisplay';
+  src: url('../src/fonts/GillSans-ExtraBoldDisplay.woff2') format('woff2'),
+    url('../src/fonts/GillSans-ExtraBoldDisplay.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../src/fonts/GillSans-BoldItalic.woff2') format('woff2'),
+    url('../src/fonts/GillSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../src/fonts/GillSans-Bold.woff2') format('woff2'),
+    url('../src/fonts/GillSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans MT Extra';
+  src: url('../src/fonts/GillSansMT-ExtraBold.woff2') format('woff2'),
+    url('../src/fonts/GillSansMT-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-Oblique.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-Oblique.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-Heavy.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-Heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT-HeavyOblique.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT-HeavyOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../src/fonts/GillSans.woff2') format('woff2'),
+    url('../src/fonts/GillSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../src/fonts/Optima.woff2') format('woff2'),
+    url('../src/fonts/Optima.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../src/fonts/GillSans-Italic.woff2') format('woff2'),
+    url('../src/fonts/GillSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../src/fonts/FuturaLT.woff2') format('woff2'),
+    url('../src/fonts/FuturaLT.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../src/fonts/Optima-Medium.woff2') format('woff2'),
+    url('../src/fonts/Optima-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-Capt.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-Capt.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../src/fonts/Optima-Italic.woff2') format('woff2'),
+    url('../src/fonts/Optima-Italic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-BoldDisp.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-BoldDisp.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-BoldCapt.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-BoldCapt.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-Bold.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../src/fonts/Optima-Bold.woff2') format('woff2'),
+    url('../src/fonts/Optima-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-BoldSubh.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-BoldSubh.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-Disp.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-Disp.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sanvito Pro';
+  src: url('../src/fonts/SanvitoPro-Lt.woff2') format('woff2'),
+    url('../src/fonts/SanvitoPro-Lt.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
