@@ -224,7 +224,16 @@ const InputForm = () => {
         <input
           type="text"
           onChange={(e) => handleDispatch('DESCRIPTION', e)}
-          maxLength="80"
+          maxLength="110"
+          required
+        />
+
+        <label>Level</label>
+        <input
+          type="number"
+          onChange={(e) => handleDispatch('LEVEL', e)}
+          max="100"
+          min="0"
           required
         />
       </Form>

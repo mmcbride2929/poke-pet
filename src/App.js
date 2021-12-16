@@ -32,12 +32,9 @@ export default App
 // findout how to always go inside of empty box
 // conditionall render so that there isn't an unrednered photo when no photo is uploaded yet
 
-// handleDeleteIcon + handle retreat cost
+// handleDeleteIcon + handle retreat cost delete
+// HANDLE add retreat, and how to add multiple
 
-// add move name to input and get it to map
-// add move damage input and get it to render
-// create move description component / input/render
-// create weakness/resistance/retreate component
 const Main = styled.main`
   height: auto;
   max-width: 900px;

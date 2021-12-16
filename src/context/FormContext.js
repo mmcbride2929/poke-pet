@@ -20,6 +20,7 @@ export const FormProvider = ({ children }) => {
     resistanceIcon: '',
     retreatCost: ['fire', 'water', 'fighting'],
     description: '',
+    level: '',
   }
 
   const [state, dispatch] = useReducer(formReducer, initialState)

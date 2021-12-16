@@ -151,6 +151,16 @@ const formReducer = (state, action) => {
         return state
       }
 
+    case 'SET_LEVEL':
+      if (action.payload.length < 4) {
+        return {
+          ...state,
+          level: action.payload,
+        }
+      } else {
+        return state
+      }
+
     default:
       return state
   }

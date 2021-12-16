@@ -24,6 +24,7 @@ const Card = () => {
     resistanceIcon,
     retreatCost,
     description,
+    level,
   } = useContext(FormContext)
 
   const dynamicImg =
@@ -51,7 +52,7 @@ const Card = () => {
         resistanceIcon={resistanceIcon}
         retreatCost={retreatCost}
       />
-      <Description description={description} />
+      <Description description={description} level={level} />
     </CardContainer>
   )
 }
