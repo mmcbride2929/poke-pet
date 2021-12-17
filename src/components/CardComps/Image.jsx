@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Photo = ({ img }) => {
+const Image = ({ img }) => {
   return (
     <ImageContainer>
       <img src={img} alt="uploaded image" />
@@ -8,7 +8,7 @@ const Photo = ({ img }) => {
   )
 }
 
-export default Photo
+export default Image
 
 const ImageContainer = styled.div`
   position: absolute;

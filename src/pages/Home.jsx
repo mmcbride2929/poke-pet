@@ -8,8 +8,8 @@ const Home = () => {
     <>
       <Header />
       <PageContent>
-        <InputForm />
         <Card />
+        <InputForm />
       </PageContent>
     </>
   )
@@ -19,5 +19,5 @@ export default Home
 
 const PageContent = styled.div`
   display: flex;
+  flex-direction: column;
 `
-//add upload photo so it shows up on screen

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import FormContext from '../../context/FormContext'
 import Name from './Name'
 import Hitpoints from './Hitpoints'
-import Photo from './Photo'
+import Image from './Image'
 import Size from './Size'
 import MoveSection from './MoveSection'
 import PerformanceBar from './PerformanceBar'
@@ -35,7 +35,9 @@ const Card = () => {
       <p>Basic Pokémon</p>
       <Name name={name} />
       <Hitpoints hitpoints={hitpoints} />
-      <Photo img={img} />
+      {/* user uploaded photo */}
+      <Image img={img} />
+      {/* card */}
       <img src={dynamicImg} />
       <Size
         lengthFeet={lengthFeet}
@@ -62,6 +64,8 @@ export default Card
 const CardContainer = styled.div`
   position: relative;
   height: 506px;
+  width: 360px;
+  margin: 50px auto;
 
   p {
     position: absolute;

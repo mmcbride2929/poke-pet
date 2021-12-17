@@ -26,8 +26,6 @@ export default App
 // would be cool to have a charmander, bulba, squirtle
 // that you can click and change color layout
 
-// clean up the form and make it into more readable bite size code
-
 //photo
 // findout how to always go inside of empty box
 // conditionall render so that there isn't an unrednered photo when no photo is uploaded yet

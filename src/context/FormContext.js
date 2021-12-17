@@ -25,8 +25,38 @@ export const FormProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(formReducer, initialState)
 
+  const handleDispatch = (string, e) => {
+    console.log('SET_' + string)
+    console.log(e.target.value)
+    dispatch({
+      type: 'SET_' + string,
+      payload: e.target.value,
+    })
+  }
+
+  const imageHandler = (e) => {
+    const reader = new FileReader()
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        dispatch({ type: 'SET_IMG', payload: reader.result })
+      }
+    }
+    reader.readAsDataURL(e.target.files[0])
+  }
+
+  const handleEnergy = (string, energyType) => {
+    console.log('SET_' + string)
+    console.log(energyType)
+    dispatch({
+      type: 'SET_' + string,
+      payload: energyType,
+    })
+  }
+
   return (
-    <FormContext.Provider value={{ ...state, dispatch }}>
+    <FormContext.Provider
+      value={{ ...state, dispatch, handleDispatch, imageHandler, handleEnergy }}
+    >
       {children}
     </FormContext.Provider>
   )

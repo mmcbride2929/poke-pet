@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useContext } from 'react'
 import FormContext from '../../context/FormContext'
 
-const EnergyIcons = () => {
+const EnergyCost = () => {
   const { energyIcons } = useContext(FormContext)
 
   return (
@@ -21,7 +21,7 @@ const EnergyIcons = () => {
   )
 }
 
-export default EnergyIcons
+export default EnergyCost
 
 const EnergyContainer = styled.div`
   position: absolute;

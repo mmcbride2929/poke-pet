@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import EnergyIcons from './EnergyIcons'
+import EnergyCost from './EnergyCost'
 import '../../fonts.css'
 
 const MoveSection = ({ moveName, moveDamage, moveDesc }) => {
   return (
     <MoveContainer>
-      <EnergyIcons />
+      <EnergyCost />
       <h2 className="move">{moveName}</h2>
       <h2 className="damage">{moveDamage}</h2>
       <h3 className="desc">{moveDesc}</h3>
