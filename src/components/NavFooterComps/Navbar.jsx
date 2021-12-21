@@ -1,29 +1,38 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import pokeball from '../../img/poke-ball.png'
+import bulba from '../../img/sprites/bulba.png'
+import squirtle from '../../img/sprites/squirtle.png'
+import charm from '../../img/sprites/charm.png'
+import FormContext from '../../context/FormContext'
+import { useContext } from 'react'
 
 const Navbar = () => {
+  const { setTheme } = useContext(FormContext)
   return (
     <Nav>
       <NavContainer>
         <LogoContainer>
-          <StyledLink to="/">
-            <img className="pokeball" src={pokeball} alt="pokeball" />
-          </StyledLink>
+          <img className="pokeball" src={pokeball} alt="pokeball" />
         </LogoContainer>
-        <LinksContainer>
-          <div>
-            <StyledLink to="/">Home</StyledLink>
-          </div>
-          <div>
-            <StyledLink to="/examples">Examples</StyledLink>
-          </div>
-        </LinksContainer>
+        <IconContainer>
+          <img src={bulba} onClick={() => setTheme(0)} alt="bulbasaur-sprite" />
+          <img
+            src={squirtle}
+            onClick={() => setTheme(1)}
+            alt="squirtle-sprite"
+          />
+          <img
+            src={charm}
+            onClick={() => setTheme(2)}
+            alt="charmander-sprite"
+          />
+        </IconContainer>
       </NavContainer>
     </Nav>
   )
 }
 
+// input backgrounds
 export default Navbar
 
 const Nav = styled.nav`
@@ -52,27 +61,15 @@ const LogoContainer = styled.div`
   }
 `
 
-const LinksContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 175px;
-  margin: 0 15px;
-
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 75px;
-    height: 30px;
-    border-radius: 2px;
-    background-color: #d53127;
-  }
-`
-
-const StyledLink = styled(Link)`
+const IconContainer = styled.div`
   width: 100%;
   padding: 5px 0;
-  color: #fccf12;
-  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 10px;
+
+  img {
+    width: 30px;
+  }
 `

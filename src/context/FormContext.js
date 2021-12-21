@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react'
+import { createContext, useReducer, useState } from 'react'
 import formReducer from './FormReducer'
 
 const FormContext = createContext()
@@ -26,8 +26,6 @@ export const FormProvider = ({ children }) => {
   const [state, dispatch] = useReducer(formReducer, initialState)
 
   const handleDispatch = (string, e) => {
-    console.log('SET_' + string)
-    console.log(e.target.value)
     dispatch({
       type: 'SET_' + string,
       payload: e.target.value,
@@ -45,17 +43,47 @@ export const FormProvider = ({ children }) => {
   }
 
   const handleEnergy = (string, energyType) => {
-    console.log('SET_' + string)
-    console.log(energyType)
     dispatch({
       type: 'SET_' + string,
       payload: energyType,
     })
   }
 
+  const [theme, setTheme] = useState(2)
+
+  const Themes = [
+    {
+      name: 'Bulba',
+      bodyColor: '#2a513f',
+      fontColor: '#cef795',
+      bgColor: '#83ba36',
+    },
+    {
+      name: 'Squirtle',
+      bodyColor: '#8bc5cd',
+      fontColor: '#2062ac',
+      bgColor: '#b4e6ee',
+    },
+    {
+      name: 'Charm',
+      bodyColor: '#ee8329',
+      fontColor: '#d53127',
+      bgColor: '#fccf12',
+    },
+  ]
+
   return (
     <FormContext.Provider
-      value={{ ...state, dispatch, handleDispatch, imageHandler, handleEnergy }}
+      value={{
+        ...state,
+        dispatch,
+        handleDispatch,
+        imageHandler,
+        handleEnergy,
+        theme,
+        setTheme,
+        Themes,
+      }}
     >
       {children}
     </FormContext.Provider>

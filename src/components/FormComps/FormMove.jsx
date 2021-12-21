@@ -12,25 +12,39 @@ import UpArrow from './UpArrow'
 import DownArrow from './DownArrow'
 
 const FormMove = () => {
-  const { handleDispatch } = useContext(FormContext)
+  const { handleDispatch, theme, Themes } = useContext(FormContext)
 
   return (
-    <>
-      <label>Move Name</label>
-      <input
-        type="text"
-        onChange={(e) => handleDispatch('MOVE_NAME', e)}
-        maxLength="16"
-        required
-      />
-      <label>Move Damage</label>
-      <input
-        type="number"
-        onChange={(e) => handleDispatch('MOVE_DAMAGE', e)}
-        max="999"
-        min="0"
-        required
-      />
+    <MoveContainer style={{ backgroundColor: Themes[theme].bgColor }}>
+      <h1>Move Details</h1>
+      <div className="input-div">
+        <label>Name</label>
+        <input
+          type="text"
+          onChange={(e) => handleDispatch('MOVE_NAME', e)}
+          maxLength="16"
+          required
+        />
+      </div>
+      <div className="input-div">
+        <label>Damage</label>
+        <input
+          type="number"
+          onChange={(e) => handleDispatch('MOVE_DAMAGE', e)}
+          max="999"
+          min="0"
+          required
+        />
+      </div>
+      <div className="input-div">
+        <label>Description</label>
+        <input
+          type="text"
+          onChange={(e) => handleDispatch('MOVE_DESC', e)}
+          maxLength="180"
+          required
+        />
+      </div>
       <MoveCostContainer>
         <div className="icon-container">
           <UpArrow type={'fire'} />
@@ -60,20 +74,39 @@ const FormMove = () => {
           <DownArrow type={'grass'} />
         </div>
       </MoveCostContainer>
-      <label>Move Description</label>
-      <input
-        type="text"
-        onChange={(e) => handleDispatch('MOVE_DESC', e)}
-        maxLength="180"
-        required
-      />
-    </>
+    </MoveContainer>
   )
 }
 
 export default FormMove
 
+const MoveContainer = styled.div`
+  width: 340px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .input-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`
+
 const MoveCostContainer = styled.div`
+  margin-top: 8px;
+  text-align: center;
+
   .up {
     vertical-align: text-bottom;
   }
@@ -98,5 +131,6 @@ const MoveCostContainer = styled.div`
   .image {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 `

@@ -24,7 +24,7 @@ const DescriptionContainer = styled.div`
   font-weight: 600;
   font-style: italic;
   overflow-wrap: break-word;
-  text-align: left;
+  text-align: center;
 
   .level {
     width: 33px;

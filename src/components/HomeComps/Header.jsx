@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 import pokeheader from '../../img/poke-pet-header.png'
+import { useContext } from 'react'
+import FormContext from '../../context/FormContext'
 
 const Header = () => {
+  const { theme, Themes } = useContext(FormContext)
+
   return (
     <HomeHeader>
       <img className="header" src={pokeheader} alt="pokepet title" />
-      <div>
-        <h1>Turn your pet into a Pokémon!</h1>
+      <div style={{ backgroundColor: Themes[theme].bgColor }}>
+        <h1 style={{ color: Themes[theme].fontColor }}>
+          Turn your pet into a Pokémon!
+        </h1>
       </div>
     </HomeHeader>
   )
@@ -31,6 +37,7 @@ const HomeHeader = styled.header`
     padding: 7px;
     border-radius: 5px;
     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   h1 {
