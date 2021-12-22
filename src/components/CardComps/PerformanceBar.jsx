@@ -27,9 +27,10 @@ const PerformanceBar = ({ weaknessIcon, resistanceIcon, retreatCost }) => {
         <p className="retreatCost">retreat cost</p>
         <div className="test">
           {retreatCost &&
-            retreatCost.map((icon) => {
+            retreatCost.map((icon, index) => {
               return (
                 <img
+                  key={index}
                   className="retreatCost-icon"
                   src={require(`../../img/energy-icons/${icon}.png`).default}
                 />

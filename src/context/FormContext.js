@@ -18,7 +18,7 @@ export const FormProvider = ({ children }) => {
     moveDesc: '',
     weaknessIcon: '',
     resistanceIcon: '',
-    retreatCost: ['fire', 'water', 'fighting'],
+    retreatCost: [],
     description: '',
     level: '',
   }

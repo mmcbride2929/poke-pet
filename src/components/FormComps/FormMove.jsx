@@ -5,11 +5,11 @@ import psychic from '../../img/energy-icons/psychic.png'
 import fighting from '../../img/energy-icons/fighting.png'
 import normal from '../../img/energy-icons/normal.png'
 import water from '../../img/energy-icons/water.png'
+import UpArrow from './UpArrow'
+import DownArrow from './DownArrow'
 import styled from 'styled-components'
 import { useContext } from 'react'
 import FormContext from '../../context/FormContext'
-import UpArrow from './UpArrow'
-import DownArrow from './DownArrow'
 
 const FormMove = () => {
   const { handleDispatch, theme, Themes } = useContext(FormContext)
@@ -46,14 +46,15 @@ const FormMove = () => {
         />
       </div>
       <MoveCostContainer>
+        <h1>Move Cost</h1>
         <div className="icon-container">
-          <UpArrow type={'fire'} />
-          <UpArrow type={'water'} />
-          <UpArrow type={'fighting'} />
-          <UpArrow type={'normal'} />
-          <UpArrow type={'psychic'} />
-          <UpArrow type={'electric'} />
-          <UpArrow type={'grass'} />
+          <UpArrow type={'ENERGY'} payload={'fire'} />
+          <UpArrow type={'ENERGY'} payload={'water'} />
+          <UpArrow type={'ENERGY'} payload={'fighting'} />
+          <UpArrow type={'ENERGY'} payload={'normal'} />
+          <UpArrow type={'ENERGY'} payload={'psychic'} />
+          <UpArrow type={'ENERGY'} payload={'electric'} />
+          <UpArrow type={'ENERGY'} payload={'grass'} />
         </div>
         <div className="image">
           <img src={fire} alt="fire-icon" />
@@ -65,13 +66,13 @@ const FormMove = () => {
           <img src={grass} alt="grass-icon" />
         </div>
         <div className="icon-container">
-          <DownArrow type={'fire'} />
-          <DownArrow type={'water'} />
-          <DownArrow type={'fighting'} />
-          <DownArrow type={'normal'} />
-          <DownArrow type={'psychic'} />
-          <DownArrow type={'electric'} />
-          <DownArrow type={'grass'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'fire'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'water'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'fighting'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'normal'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'psychic'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'electric'} />
+          <DownArrow type={'ENERGY_DELETE'} payload={'grass'} />
         </div>
       </MoveCostContainer>
     </MoveContainer>
@@ -106,6 +107,11 @@ const MoveContainer = styled.div`
 const MoveCostContainer = styled.div`
   margin-top: 8px;
   text-align: center;
+
+  h1 {
+    margin: 0;
+    margin-top: 5px;
+  }
 
   .up {
     vertical-align: text-bottom;

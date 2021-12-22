@@ -2,13 +2,13 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
 import { useContext } from 'react'
 import FormContext from '../../context/FormContext'
 
-const UpArrow = ({ type }) => {
+const UpArrow = ({ type, payload }) => {
   const { handleEnergy } = useContext(FormContext)
 
   return (
     <ArrowDropUpIcon
       className="up"
-      onClick={() => handleEnergy('ENERGY', type)}
+      onClick={() => handleEnergy(type, payload)}
     />
   )
 }

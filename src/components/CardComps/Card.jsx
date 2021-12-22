@@ -70,14 +70,6 @@ const Card = () => {
             color: Themes[theme].fontColor,
             backgroundColor: Themes[theme].bgColor,
           }}
-        >
-          Screenshot
-        </StyledButton>
-        <StyledButton
-          style={{
-            color: Themes[theme].fontColor,
-            backgroundColor: Themes[theme].bgColor,
-          }}
           onClick={downloadScreenshot}
         >
           Download

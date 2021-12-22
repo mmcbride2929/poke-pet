@@ -137,6 +137,23 @@ const formReducer = (state, action) => {
         resistanceIcon: action.payload,
       }
 
+    case 'SET_RETREAT_ADD':
+      if (state.retreatCost.length < 3) {
+        return {
+          ...state,
+          retreatCost: [...state.retreatCost, action.payload],
+        }
+      } else {
+        return state
+      }
+
+    case 'SET_RETREAT_DELETE':
+      if (state.retreatCost.length > 0) {
+        return {
+          ...state,
+        }
+      }
+
     case 'SET_DESCRIPTION':
       // when input is empty, clear name
       if (action.payload === '') {

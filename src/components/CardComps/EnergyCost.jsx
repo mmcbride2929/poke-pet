@@ -9,9 +9,10 @@ const EnergyCost = () => {
     <EnergyContainer>
       <div>
         {energyIcons.length > 0 &&
-          energyIcons.map((icon) => {
+          energyIcons.map((icon, index) => {
             return (
               <img
+                key={index}
                 src={require(`../../img/energy-icons/${icon}.png`).default}
               />
             )
