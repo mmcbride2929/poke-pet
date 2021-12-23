@@ -23,8 +23,10 @@ export const FormProvider = ({ children }) => {
     level: '',
   }
 
+  // creating our reducer
   const [state, dispatch] = useReducer(formReducer, initialState)
 
+  // handles type of reducer & it's data
   const handleDispatch = (string, e) => {
     dispatch({
       type: 'SET_' + string,
@@ -32,6 +34,7 @@ export const FormProvider = ({ children }) => {
     })
   }
 
+  // handles uploaded photo
   const imageHandler = (e) => {
     const reader = new FileReader()
     reader.onload = () => {
@@ -42,6 +45,7 @@ export const FormProvider = ({ children }) => {
     reader.readAsDataURL(e.target.files[0])
   }
 
+  // handles type of energy icon is selected
   const handleEnergy = (string, energyType) => {
     dispatch({
       type: 'SET_' + string,
@@ -50,7 +54,6 @@ export const FormProvider = ({ children }) => {
   }
 
   const [theme, setTheme] = useState(2)
-
   const Themes = [
     {
       name: 'Bulba',

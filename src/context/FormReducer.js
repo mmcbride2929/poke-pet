@@ -8,6 +8,7 @@ const formReducer = (state, action) => {
       if (action.payload === '') {
         return { ...state, name: '' }
       }
+      // filter out non-letters
       if (action.payload.match(letters)) {
         return {
           ...state,
@@ -77,6 +78,7 @@ const formReducer = (state, action) => {
         }
       }
 
+    // **** how to delete icon, and only last icon if replicate icons are present
     case 'SET_ENERGY_DELETE':
       if (state.energyIcons.length > 0) {
         const [, ...newEnergyIcons] = state.energyIcons
@@ -147,6 +149,7 @@ const formReducer = (state, action) => {
         return state
       }
 
+    // **** how to delete icon, and only last icon if replicate icons are present
     case 'SET_RETREAT_DELETE':
       if (state.retreatCost.length > 0) {
         return {

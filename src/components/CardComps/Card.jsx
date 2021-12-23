@@ -31,7 +31,7 @@ const Card = () => {
     Themes,
   } = useContext(FormContext)
 
-  const { getImage, ref, downloadScreenshot } = useContext(CardContext)
+  const { ref, downloadScreenshot } = useContext(CardContext)
 
   const dynamicImg =
     require(`../../img/card-templates/${type}-type.png`).default
@@ -44,9 +44,7 @@ const Card = () => {
         <Hitpoints hitpoints={hitpoints} />
         {/* user uploaded photo */}
         <Image img={img} />
-
         <img className="card" src={dynamicImg} />
-
         <Size
           lengthFeet={lengthFeet}
           lengthInches={lengthInches}

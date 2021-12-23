@@ -46,4 +46,3 @@ const EnergyContainer = styled.div`
     }
   }
 `
-//icon size, and move power size plus width of move container

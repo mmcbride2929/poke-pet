@@ -21,8 +21,6 @@ export default Pokepet
 // handleDeleteIcon + handle retreat cost delete
 // HANDLE add retreat, and how to add multiple
 
-// does width need to go under 375?
-
 const Main = styled.main`
   height: auto;
   max-width: 900px;

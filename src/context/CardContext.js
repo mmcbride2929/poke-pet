@@ -8,8 +8,7 @@ export const CardProvider = ({ children }) => {
   const ref = createRef(null)
   const getImage = () => takeScreenshot(ref.current)
 
-  // download state
-
+  // setting and holding image
   const [image, takeScreenshot] = useScreenshot({
     type: 'image/jpeg',
     quality: 1.0,

@@ -95,8 +95,7 @@ const FormPerformance = () => {
     </PerformanceContainer>
   )
 }
-// take onclick off of arrow components and add them to the component where the type is passed
-// need to make header for both sections
+
 export default FormPerformance
 
 const PerformanceContainer = styled.div`
