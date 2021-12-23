@@ -78,14 +78,22 @@ const formReducer = (state, action) => {
         }
       }
 
-    // **** how to delete icon, and only last icon if replicate icons are present
     case 'SET_ENERGY_DELETE':
       if (state.energyIcons.length > 0) {
-        const [, ...newEnergyIcons] = state.energyIcons
-
-        return {
-          ...state,
-          energyIcons: newEnergyIcons,
+        // clone energyIcons array
+        const iconsClone = JSON.parse(JSON.stringify(state.energyIcons))
+        const reverseIcons = iconsClone.reverse()
+        // getting index of latest type entered in reversed arr
+        const index = reverseIcons.indexOf(action.payload, 0)
+        if (index > -1) {
+          reverseIcons.splice(index, 1)
+          return {
+            ...state,
+            // re-reversing to set render in correct order
+            energyIcons: reverseIcons.reverse(),
+          }
+        } else {
+          return state
         }
       }
 
@@ -149,14 +157,25 @@ const formReducer = (state, action) => {
         return state
       }
 
-    // **** how to delete icon, and only last icon if replicate icons are present
     case 'SET_RETREAT_DELETE':
       if (state.retreatCost.length > 0) {
-        return {
-          ...state,
+        // clone energyIcons array
+        const iconsClone = JSON.parse(JSON.stringify(state.retreatCost))
+        const reverseIcons = iconsClone.reverse()
+        // getting index of latest type entered in reversed arr
+        const index = reverseIcons.indexOf(action.payload, 0)
+        if (index > -1) {
+          reverseIcons.splice(index, 1)
+
+          return {
+            ...state,
+            // re-reversing to set render in correct order
+            retreatCost: reverseIcons.reverse(),
+          }
+        } else {
+          return state
         }
       }
-
     case 'SET_DESCRIPTION':
       // when input is empty, clear name
       if (action.payload === '') {
