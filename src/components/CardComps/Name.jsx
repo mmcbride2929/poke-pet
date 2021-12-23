@@ -19,4 +19,13 @@ const NameContainer = styled.div`
   h1 {
     font-size: 1.35rem;
   }
+
+  @media (max-width: 375px) {
+    left: 32px;
+    top: 26px;
+
+    h1 {
+      font-size: 1.1rem;
+    }
+  }
 `

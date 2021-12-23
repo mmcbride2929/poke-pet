@@ -25,4 +25,13 @@ const ImageContainer = styled.div`
     margin-top: 63px;
     border-radius: 2px;
   }
+
+  @media (max-width: 375px) {
+    width: 227px;
+
+    img {
+      margin-top: 52px;
+      height: 162px;
+    }
+  }
 `

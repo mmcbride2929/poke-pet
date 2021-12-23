@@ -35,4 +35,15 @@ const EnergyContainer = styled.div`
     width: 18px;
     height: 18px;
   }
+
+  @media (max-width: 375px) {
+    top: 55px;
+
+    img {
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+    }
+  }
 `
+//icon size, and move power size plus width of move container

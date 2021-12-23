@@ -14,4 +14,10 @@ const HitpointsContainer = styled.div`
   position: absolute;
   top: 31px;
   right: 66px;
+
+  @media (max-width: 375px) {
+    font-size: 1.1rem;
+    top: 26px;
+    right: 56px;
+  }
 `

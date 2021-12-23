@@ -45,7 +45,7 @@ const Card = () => {
         {/* user uploaded photo */}
         <Image img={img} />
 
-        <img src={dynamicImg} />
+        <img className="card" src={dynamicImg} />
 
         <Size
           lengthFeet={lengthFeet}
@@ -81,6 +81,10 @@ const Card = () => {
 
 export default Card
 
+const CardSection = styled.div`
+  margin: 0 auto;
+`
+
 const CardContainer = styled.div`
   position: relative;
   height: 506px;
@@ -88,6 +92,7 @@ const CardContainer = styled.div`
   margin-top: 35px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
+
   p {
     position: absolute;
     top: 22px;
@@ -95,6 +100,21 @@ const CardContainer = styled.div`
     font-size: 0.62rem;
     font-family: 'Futura LT';
     font-weight: Bold;
+
+    @media (max-width: 375px) {
+      top: 18px;
+      left: 32px;
+      font-size: 0.57rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    width: 300px;
+    height: 421px;
+
+    .card {
+      width: 300px;
+    }
   }
 `
 const ButtonContainer = styled.div`
@@ -119,7 +139,4 @@ const StyledButton = styled.button`
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-`
-const CardSection = styled.div`
-  margin: 0 auto;
 `

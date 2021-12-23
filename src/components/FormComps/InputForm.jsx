@@ -61,4 +61,11 @@ const Form = styled.form`
   .up {
     color: black;
   }
+
+  @media (max-width: 375px) {
+    input,
+    select {
+      width: 150px;
+    }
+  }
 `

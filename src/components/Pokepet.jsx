@@ -22,8 +22,6 @@ export default Pokepet
 // HANDLE add retreat, and how to add multiple
 
 // does width need to go under 375?
-// need to add a section for retreat icons
-// add key to mappings of icons.. MOVE COST . RETREAT COST
 
 const Main = styled.main`
   height: auto;

@@ -55,4 +55,8 @@ const ImageContainer = styled.div`
     background-color: white;
     color: black;
   }
+
+  @media (max-width: 375px) {
+    width: 300px;
+  }
 `

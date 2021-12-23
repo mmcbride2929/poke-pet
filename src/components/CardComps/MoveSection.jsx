@@ -54,4 +54,25 @@ const MoveContainer = styled.div`
     font-family: 'Futura LT';
     font-weight: 700;
   }
+
+  @media (max-width: 375px) {
+    width: 250px;
+
+    .move {
+      top: 45px;
+      font-size: 0.8rem;
+    }
+
+    .damage {
+      top: 55px;
+      font-size: 1.2rem;
+    }
+
+    .desc {
+      top: 90px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0 20px;
+    }
+  }
 `

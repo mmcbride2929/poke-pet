@@ -30,7 +30,7 @@ const FormTop = () => {
         </select>
       </div>
       <div>
-        <label>Hitpoints</label>
+        <label>HP</label>
         <input
           type="number"
           onChange={(e) => handleDispatch('HP', e)}
@@ -65,5 +65,9 @@ const InputContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (max-width: 375px) {
+    width: 300px;
   }
 `

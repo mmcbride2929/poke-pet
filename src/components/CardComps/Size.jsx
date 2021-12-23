@@ -69,4 +69,50 @@ const SizeContainer = styled.div`
     top: 269.5px;
     left: 258px;
   }
+
+  @media (max-width: 375px) {
+    font-size: 0.7rem;
+
+    .poke {
+      position: absolute;
+      top: 224.5px;
+      left: 47px;
+    }
+
+    .length {
+      position: absolute;
+      top: 224.5px;
+      left: 109px;
+    }
+
+    .userLengthFeet {
+      position: absolute;
+      top: 224.5px;
+      left: 143px;
+    }
+
+    .feetApostrophe {
+      position: absolute;
+      top: 224.5px;
+      left: 149px;
+    }
+
+    .userLengthInches {
+      position: absolute;
+      top: 224.5px;
+      left: 155px;
+    }
+
+    .weight {
+      position: absolute;
+      top: 224.5px;
+      left: 180px;
+    }
+
+    .userWeight {
+      position: absolute;
+      top: 224.5px;
+      left: 218px;
+    }
+  }
 `

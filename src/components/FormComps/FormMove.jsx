@@ -102,6 +102,10 @@ const MoveContainer = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (max-width: 375px) {
+    width: 300px;
+  }
 `
 
 const MoveCostContainer = styled.div`

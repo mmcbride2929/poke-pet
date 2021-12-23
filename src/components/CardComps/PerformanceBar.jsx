@@ -25,7 +25,7 @@ const PerformanceBar = ({ weaknessIcon, resistanceIcon, retreatCost }) => {
       </ResistanceContainer>
       <RetreatContainer>
         <p className="retreatCost">retreat cost</p>
-        <div className="test">
+        <div className="icon-map">
           {retreatCost &&
             retreatCost.map((icon, index) => {
               return (
@@ -59,6 +59,21 @@ const WeaknessContainer = styled.div`
     height: 18px;
     width: 18px;
   }
+
+  @media (max-width: 375px) {
+    .weakness {
+      top: 341px;
+      left: 30px;
+      font-size: 0.6rem;
+    }
+
+    .weakness-icon {
+      top: 353px;
+      left: 43px;
+      height: 15px;
+      width: 15px;
+    }
+  }
 `
 
 const ResistanceContainer = styled.div`
@@ -77,6 +92,19 @@ const ResistanceContainer = styled.div`
     height: 18px;
     width: 18px;
   }
+
+  @media (max-width: 375px) {
+    .resistance {
+      top: 347px;
+      font-size: 0.6rem;
+    }
+
+    .resistance-icon {
+      top: 361px;
+      height: 15px;
+      width: 15px;
+    }
+  }
 `
 
 const RetreatContainer = styled.div`
@@ -87,7 +115,7 @@ const RetreatContainer = styled.div`
     font-size: 0.65rem;
   }
 
-  .test {
+  .icon-map {
     position: absolute;
     width: 55px;
     top: 422px;
@@ -99,5 +127,28 @@ const RetreatContainer = styled.div`
     height: 18px;
     width: 18px;
     vertical-align: middle;
+  }
+
+  @media (max-width: 375px) {
+    .retreatCost {
+      top: 341px;
+      left: 225px;
+      font-size: 0.6rem;
+    }
+
+    .icon-map {
+      position: absolute;
+      width: 55px;
+      top: 350px;
+      left: 222px;
+      text-align: center;
+    }
+
+    .retreatCost-icon {
+      top: 353px;
+      left: 43px;
+      height: 15px;
+      width: 15px;
+    }
   }
 `
