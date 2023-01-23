@@ -58,6 +58,7 @@ const LogoContainer = styled.div`
   .pokeball {
     vertical-align: middle;
     width: 35px;
+    cursor: pointer;
   }
 `
 
@@ -71,5 +72,6 @@ const IconContainer = styled.div`
 
   img {
     width: 30px;
+    cursor: pointer;
   }
 `

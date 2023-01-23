@@ -20,6 +20,7 @@ const ImageContainer = styled.div`
   text-align: center;
 
   img {
+    object-fit: cover;
     width: 100%;
     height: 195px;
     margin-top: 63px;
