@@ -5,17 +5,22 @@ import Card from '../components/CardComps/Card'
 
 const Home = () => {
   return (
-    <>
+    <Container>
       <Header />
       <PageContent>
         <Card />
         <InputForm />
       </PageContent>
-    </>
+    </Container>
   )
 }
 
 export default Home
+
+const Container = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`
 
 const PageContent = styled.div`
   display: flex;

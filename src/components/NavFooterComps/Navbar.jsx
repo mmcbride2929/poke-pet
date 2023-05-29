@@ -36,7 +36,6 @@ const Navbar = () => {
 export default Navbar
 
 const Nav = styled.nav`
-  max-width: 900px;
   height: auto;
   background-color: #fccf12;
   padding: 10px;
@@ -47,9 +46,11 @@ const Nav = styled.nav`
   text-transform: uppercase;
 `
 const NavContainer = styled.div`
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 `
 
 const LogoContainer = styled.div`

@@ -76,6 +76,8 @@ const formReducer = (state, action) => {
           ...state,
           energyIcons: [...state.energyIcons, action.payload],
         }
+      } else {
+        return state
       }
 
     case 'SET_ENERGY_DELETE':

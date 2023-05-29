@@ -8,8 +8,8 @@ const Pokepet = () => {
   const { Themes, theme } = useContext(FormContext)
   return (
     <>
-      <Navbar />
       <Main style={{ backgroundColor: Themes[theme].bodyColor }}>
+        <Navbar />
         <Home />
       </Main>
     </>
@@ -23,6 +23,5 @@ export default Pokepet
 
 const Main = styled.main`
   height: auto;
-  max-width: 900px;
   margin: 0 auto;
 `
