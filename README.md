@@ -1,7 +1,7 @@
 ## Pokepet
 Create your own Pokemon card of your pet. 
 
-## [View Demo](https://cranky-davinci-d9d838.netlify.app/)
+## [View Demo](https://poke-pet.netlify.app/)
 
 
 
@@ -15,12 +15,5 @@ Create your own Pokemon card of your pet.
 * Material UI
 * React Context API 
 * Styled-Components
-* html2canvas
+* use-react-screenshot
 
-
-## Quick Start
-Clone the git repo & install dependencies from npm:
-* git clone: https://github.com/mmcbride2929/poke-pet.git
-* cd /Pokepet
-* ```npm install```
-* ```npm start```
