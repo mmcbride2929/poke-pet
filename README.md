@@ -1,7 +1,7 @@
 ## Pokepet
 Create your own Pokemon card of your pet. 
 
-## [View Demo](https://cranky-davinci-d9d838.netlify.app/](https://poke-pet.netlify.app/)
+## [View Demo](https://poke-pet.netlify.app/)
 
 
 
