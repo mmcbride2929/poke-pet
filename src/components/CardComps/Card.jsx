@@ -36,6 +36,7 @@ const Card = () => {
   const dynamicImg =
     require(`../../img/card-templates/${type}-type.png`).default
 
+  console.log(dynamicImg)
   return (
     <CardSection>
       <CardContainer ref={ref}>
