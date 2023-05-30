@@ -34,7 +34,7 @@ const Card = () => {
   const { ref, downloadScreenshot } = useContext(CardContext)
 
   const dynamicImg =
-    require(`../../img/card-templates/${type}-type.webp`).default
+    require(`../../img/card-templates/${type}-type.png`).default
 
   return (
     <CardSection>
