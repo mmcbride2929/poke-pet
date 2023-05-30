@@ -8,7 +8,7 @@ const PerformanceBar = ({ weaknessIcon, resistanceIcon, retreatCost }) => {
         {weaknessIcon && (
           <img
             className="weakness-icon"
-            src={require(`../../img/energy-icons/${weaknessIcon}.png`).default}
+            src={require(`../../img/energy-icons/${weaknessIcon}.png`)}
           />
         )}
       </WeaknessContainer>
@@ -17,9 +17,7 @@ const PerformanceBar = ({ weaknessIcon, resistanceIcon, retreatCost }) => {
         {resistanceIcon && (
           <img
             className="resistance-icon"
-            src={
-              require(`../../img/energy-icons/${resistanceIcon}.png`).default
-            }
+            src={require(`../../img/energy-icons/${resistanceIcon}.png`)}
           />
         )}
       </ResistanceContainer>
@@ -32,7 +30,7 @@ const PerformanceBar = ({ weaknessIcon, resistanceIcon, retreatCost }) => {
                 <img
                   key={index}
                   className="retreatCost-icon"
-                  src={require(`../../img/energy-icons/${icon}.png`).default}
+                  src={require(`../../img/energy-icons/${icon}.png`)}
                 />
               )
             })}

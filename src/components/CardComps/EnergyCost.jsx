@@ -13,7 +13,7 @@ const EnergyCost = () => {
             return (
               <img
                 key={index}
-                src={require(`../../img/energy-icons/${icon}.png`).default}
+                src={require(`../../img/energy-icons/${icon}.png`)}
               />
             )
           })}

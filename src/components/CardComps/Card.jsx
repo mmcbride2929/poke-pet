@@ -33,10 +33,8 @@ const Card = () => {
 
   const { ref, downloadScreenshot } = useContext(CardContext)
 
-  const dynamicImg =
-    require(`../../img/card-templates/${type}-type.png`).default
+  const dynamicImg = require(`../../img/card-templates/${type}-type.png`)
 
-  console.log(dynamicImg)
   return (
     <CardSection>
       <CardContainer ref={ref}>
