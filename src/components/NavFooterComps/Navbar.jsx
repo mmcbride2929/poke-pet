@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import pokeball from '../../img/poke-ball.png'
-import bulba from '../../img/sprites/bulba.png'
-import squirtle from '../../img/sprites/squirtle.png'
-import charm from '../../img/sprites/charm.png'
+import pokeball from '../../img/poke-ball.webp'
+import bulba from '../../img/sprites/bulba.webp'
+import squirtle from '../../img/sprites/squirtle.webp'
+import charm from '../../img/sprites/charm.webp'
 import FormContext from '../../context/FormContext'
 import { useContext } from 'react'
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import pokeheader from '../../img/poke-pet-header.png'
+import pokeheader from '../../img/poke-pet-header.webp'
 import { useContext } from 'react'
 import FormContext from '../../context/FormContext'
 
